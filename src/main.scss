@@ -16,8 +16,11 @@ body {
 .text-center {
   text-align: center;
 }
+.full-width {
+  width: 100%;
+}
 
-// ======= Components =======
+// ======= Mobile Styles =======
 #heroSection {
   background-image: url("../src/images/heroImage.jpg");
   background-size: cover;
@@ -37,4 +40,12 @@ body {
 h1 {
   text-shadow: 0 0 2px #000;
   color: white;
+}
+
+// ======= Tablet styles =======
+@media screen and(min-width: 768px) {
+}
+
+// ======= Desktop styles =======
+@media screen and(min-width: 1024px) {
 }
