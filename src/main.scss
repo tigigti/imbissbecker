@@ -25,6 +25,38 @@ body {
   width: 100%;
 }
 
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  &--small {
+    max-width: 860px;
+    padding: 0 $spacing;
+  }
+}
+
+.flex-container {
+  display: flex;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+.flex-column {
+  flex-direction: column;
+}
+
+// Generates classes flex-1 to flex-12
+@mixin flex-self {
+  @for $i from 1 through 12 {
+    .flex-#{$i} {
+      flex: $i;
+    }
+  }
+}
+
+@include flex-self;
+
 // ======= Desktop Styles =======
 #heroImage {
   background-image: url("../src/images/heroImage.jpg");
@@ -57,13 +89,19 @@ h1 {
     flex-direction: row;
     color: $white;
     padding: (3 * $spacing);
+    justify-content: center;
     &-item {
-      margin-right: 2 * $spacing;
+      margin: 0 2 * $spacing;
     }
   }
   &__title {
     margin: auto;
+    font-size: 4rem;
   }
+}
+
+.about-us-section {
+  background-color: $white;
 }
 
 // ======= Tablet styles =======
