@@ -17,6 +17,19 @@ body {
   font-family: "Noto Sans JP", sans-serif;
 }
 
+h1 {
+  font-size: 2rem;
+}
+h2 {
+  font-size: 1.5rem;
+}
+h3 {
+  font-size: 1.25rem;
+}
+
+section {
+  background-color: $white;
+}
 // ======= Utility =======
 .text-center {
   text-align: center;
@@ -38,12 +51,36 @@ body {
 .flex-container {
   display: flex;
 }
-
 .flex-row {
   flex-direction: row;
 }
 .flex-column {
   flex-direction: column;
+}
+
+.text-black {
+  color: $black;
+}
+.text-white {
+  color: $white;
+}
+
+.background-white {
+  background-color: $white;
+}
+
+.padding-around {
+  padding: $spacing * 5 0;
+}
+.with-space {
+  padding-left: $spacing;
+  padding-right: $spacing;
+  &--right {
+    padding-right: $spacing;
+  }
+  &--left {
+    padding-left: $spacing;
+  }
 }
 
 // Generates classes flex-1 to flex-12
@@ -74,16 +111,13 @@ body {
   }
 }
 
-h1 {
-  color: $white;
-}
-
 .hero-section {
   position: relative;
   height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  background-color: transparent;
   &__nav {
     display: flex;
     flex-direction: row;
@@ -97,13 +131,40 @@ h1 {
   &__title {
     margin: auto;
     font-size: 4rem;
+    color: $white;
   }
 }
 
 .about-us-section {
-  background-color: $white;
 }
 
+.gallery-section {
+}
+
+.info-group {
+  &__heading {
+    margin-bottom: 0;
+  }
+
+  &__desc {
+    color: $darkgray;
+  }
+  padding-bottom: $spacing * 2;
+  &:last-child {
+    padding-bottom: 0;
+  }
+}
+
+.menu-cart {
+  &__title {
+    text-align: center;
+  }
+  &__container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
 // ======= Tablet styles =======
 @media screen and(max-width: 1024px) {
 }
