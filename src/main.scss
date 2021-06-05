@@ -195,9 +195,32 @@ section {
     gap: 8 * $spacing;
   }
   &__category {
+    display: none;
     margin-bottom: 8 * $spacing;
+    &.active {
+      display: block;
+    }
     &:last-child {
       margin-bottom: 0;
+    }
+  }
+}
+
+.menu-section {
+  &__toggler {
+    box-sizing: border-box;
+    span {
+      border: 1px solid $darkgray;
+      padding: $spacing 2 * $spacing;
+      background-color: $white;
+      color: $black;
+      transition: all 0.2s;
+      border-radius: $spacing / 2;
+      &:hover {
+        cursor: pointer;
+        background-color: $black;
+        color: $white;
+      }
     }
   }
 }
