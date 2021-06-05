@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap");
 
 // ======= Variables =======
-$primary: crimson;
+$primary: rgb(28, 92, 159);
 $white: rgb(250, 250, 250);
 $lightgray: rgb(182, 181, 181);
 $darkgray: rgb(102, 102, 102);
@@ -15,6 +15,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Noto Sans JP", sans-serif;
+  scroll-behavior: smooth;
 }
 
 h1 {
@@ -97,9 +98,9 @@ section {
 
 // ======= Desktop Styles =======
 #heroImage {
-  background-image: url("../src/images/heroImage.jpg");
+  background-image: url("../src/images/becker.jpg");
   background-size: cover;
-  background-position: center;
+  background-position: center center;
   background-repeat: no-repeat;
   position: fixed;
   z-index: -10;
@@ -123,27 +124,38 @@ section {
     display: flex;
     flex-direction: row;
     color: $white;
-    padding: (3 * $spacing);
+    padding: $spacing (3 * $spacing);
     justify-content: center;
+    background-color: $black;
     &-item {
-      margin: 0 2 * $spacing;
+      margin: 0 4 * $spacing;
+      color: $white;
+      text-decoration: none;
+      font-size: 1.25rem;
+      transition: all 0.2s;
+      &:hover {
+        color: $lightgray;
+      }
     }
   }
   &__title {
     margin: auto;
     font-size: 4rem;
     color: $white;
+    background-color: rgba($black, 0.8);
   }
 }
 
 .about-us-section {
   p {
     color: $darkgray;
+    line-height: 1.5;
+    font-size: 1.15rem;
   }
 }
 
 .gallery-section {
-  background-color: $lightgray;
+  background-color: $primary;
 }
 
 .info-group {
@@ -213,19 +225,34 @@ section {
     white-space: nowrap;
     span {
       display: inline-block;
-      border: 1px solid $darkgray;
+      border: 1px solid $lightgray;
       padding: $spacing 2 * $spacing;
       background-color: $white;
       color: $black;
       transition: all 0.2s;
       border-radius: $spacing / 2;
-      &:hover {
+      &:hover,
+      &.active {
         cursor: pointer;
-        background-color: $black;
+        background-color: $primary;
         color: $white;
+        border-color: $primary;
       }
     }
   }
+}
+
+.here-maps-section {
+  height: 100vh;
+  padding: 10 * $spacing;
+  box-sizing: border-box;
+  background-color: $primary;
+}
+
+footer {
+  min-height: 150px;
+  background-color: $black;
+  color: $black;
 }
 
 // ======= Small screen styles =======
@@ -233,13 +260,13 @@ section {
   .menu-cart {
     padding: 0 2 * $spacing;
   }
-  .menu-cart__item {
-  }
 }
 
 // ======= Tablet styles =======
 @media screen and(max-width: 1024px) {
-  .menu-cart__item {
+  .here-maps-section {
+    padding-left: $spacing * 4;
+    padding-right: $spacing * 4;
   }
 }
 
@@ -256,5 +283,23 @@ section {
       max-width: 400px;
       margin: auto;
     }
+  }
+  .mobile-column {
+    flex-direction: column;
+  }
+  .hide-for-mobile {
+    display: none;
+  }
+  .hero-section {
+    &__title {
+      font-size: 2rem;
+    }
+  }
+
+  .here-maps-section {
+    padding: 6 * $spacing $spacing $spacing $spacing;
+  }
+  footer {
+    min-height: 50px;
   }
 }

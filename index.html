@@ -1,69 +1,130 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Ihr Imbiss Becker in Wuppertal. Wurst, Schnitzel, Pizza und alles was das Herz begehrt. Seit über 50 Jahren! Wir haben für sie geöffnet."
+    />
     <title>Imbiss Becker</title>
-    <link rel="stylesheet" href="node_modules/@splidejs/splide/dist/css/splide.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://js.api.here.com/v3/3.1/mapsjs-ui.css" />
     <link rel="stylesheet" href="dist/main.css" />
   </head>
   <body>
     <div id="heroImage"></div>
     <section class="hero-section">
-      <nav class="hero-section__nav">
-        <div class="hero-section__nav-item">nav item</div>
-        <div class="hero-section__nav-item">nav item</div>
-        <div class="hero-section__nav-item">nav item</div>
+      <nav class="hero-section__nav hide-for-mobile">
+        <a href="#aboutus" class="hero-section__nav-item">Über uns</a>
+        <a href="#gallery" class="hero-section__nav-item">Gallerie</a>
+        <a href="#menu" class="hero-section__nav-item">Menü</a>
+        <a href="#map" class="hero-section__nav-item">Anfahrt</a>
       </nav>
       <h1 class="hero-section__title text-center full-width">Imbiss Becker</h1>
     </section>
 
-    <section class="about-us-section padding-around">
-      <div class="flex-container flex-row container container--small">
+    <section id="aboutus" class="about-us-section padding-around">
+      <div class="flex-container flex-row container container--small mobile-column">
         <div class="flex-3 with-space--right">
-          <h1 class="text-black">Imbiss Becker, gelegen in Wuppertal</h1>
+          <h1 class="text-black">Der Imbiss Becker in Wuppertal</h1>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus facilisis ullamcorper magna. Sed iaculis
-            ultrices euismod. Pellentesque aliquam eget eros et congue. Nam euismod sit amet sem at fringilla. Quisque
-            laoreet at turpis sit amet lacinia. Ut tincidunt ultrices ipsum, quis luctus velit tincidunt id. Cras sapien
-            nulla, ultricies eget nisl ut, gravida mattis velit. Vestibulum non massa tortor. Nam a aliquam tortor.
-            Praesent dictum elementum elementum.
+            Beim Imbiss Becker gibt es reichhaltige Auswahl, zb. Klassiker wie Currywurst, Pommes, Schnitzel in
+            Variationen, Pizza und weitere Köstlichkeiten. Bereits seit über 50 Jahren in Wuppertal versorgen wir
+            Besucher von morgens bis abends mit Wurst und mehr. Wir sind auch während Corona-Zeiten für Sie da!
           </p>
         </div>
         <div class="flex-1 with-space--left">
           <div class="info-group">
             <h3 class="info-group__heading">Telefon</h3>
-            <div class="info-group__desc">0 123 456789</div>
+            <div class="info-group__desc">(+49) 202 554128</div>
           </div>
           <div class="info-group">
             <h3 class="info-group__heading">Standort</h3>
-            <div class="info-group__desc">Wuppertal</div>
+            <div class="info-group__desc">
+              Kleiner Werth 40, Wuppertal
+              <a
+                href="https://www.google.com/maps/place/Imbiss+Becker/@51.2744076,7.2041187,17z/data=!3m1!4b1!4m5!3m4!1s0x47b928165b4e8701:0x9c94f6b2f794c602!8m2!3d51.2744076!4d7.2063074?hl=en-GB"
+                target="_blank"
+                >(Maps)</a
+              >
+            </div>
           </div>
           <div class="info-group">
             <h3 class="info-group__heading">Öffnungszeiten</h3>
-            <div class="info-group__desc">Mo-Fr: 10-18</div>
-            <div class="info-group__desc">Sa-So: 10-20</div>
+            <div class="info-group__desc">
+              <div class="flex-container">
+                <div class="flex-1">Mo-Sa:</div>
+                <div class="flex-2">9:00 - 22:00</div>
+              </div>
+              <div class="flex-container">
+                <div class="flex-1">So:</div>
+                <div class="flex-2">15:00 - 22:00</div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="gallery-section">
+    <section id="gallery" class="gallery-section">
       <div class="splide container">
         <div class="splide__track">
           <ul class="splide__list">
-            <img src="src/images/heroImage.jpg" class="splide__slide" />
-            <img src="src/images/heroImage.jpg" class="splide__slide" />
-            <img src="src/images/heroImage.jpg" class="splide__slide" />
+            <li class="splide__slide">
+              <div class="splide__slide__container">
+                <img src="src/images/becker.jpg" />
+              </div>
+            </li>
+            <li class="splide__slide">
+              <div class="splide__slide__container">
+                <img src="src/images/becker2.jpg" />
+              </div>
+            </li>
+            <li class="splide__slide">
+              <div class="splide__slide__container">
+                <img src="src/images/urkunde.jpg" />
+              </div>
+            </li>
+            <li class="splide__slide">
+              <div class="splide__slide__container">
+                <img src="src/images/artikel.jpg" />
+              </div>
+            </li>
+            <li class="splide__slide">
+              <div class="splide__slide__container">
+                <img src="src/images/collage.jpg" />
+              </div>
+            </li>
+            <li class="splide__slide">
+              <div class="splide__slide__container">
+                <img src="src/images/old.jpg" />
+              </div>
+            </li>
+            <li class="splide__slide">
+              <div class="splide__slide__container">
+                <img src="src/images/currywurst.jpg" />
+              </div>
+            </li>
+            <li class="splide__slide">
+              <div class="splide__slide__container">
+                <img src="src/images/schnitzel.jpg" />
+              </div>
+            </li>
+            <li class="splide__slide">
+              <div class="splide__slide__container">
+                <img src="src/images/pizza.jpg" />
+              </div>
+            </li>
           </ul>
         </div>
       </div>
     </section>
 
-    <section class="menu-section padding-around">
+    <section id="menu" class="menu-section padding-around">
       <div class="menu-section__toggler container with-space padding-around">
-        <span data-toggle-id="cat-1">Imbissgerichte</span>
+        <span class="active" data-toggle-id="cat-1">Imbissgerichte</span>
         <span data-toggle-id="cat-2">Koteletts</span>
         <span data-toggle-id="cat-3">Schnitzel vom Schwein</span>
         <span data-toggle-id="cat-4">Gyrosgerichte</span>
@@ -1267,6 +1328,21 @@
         </div>
       </div>
     </section>
+
+    <section id="map" class="here-maps-section">
+      <div id="mapContainer" style="width: 100%; height: 100%"></div>
+    </section>
+
+    <footer>
+      <div class="container padding-around">
+        Kleiner Werth 40, Wuppertal. Imbiss Becker. Currywurst, Pizza, Koteletts, Schnitzel, Gyros, Spieß,
+        Nudelgerichte. 60 Jahre Imbiss. Restaurant, Corona, In house dining, In-house.
+      </div>
+    </footer>
+    <script type="text/javascript" src="https://js.api.here.com/v3/3.1/mapsjs-core.js"></script>
+    <script type="text/javascript" src="https://js.api.here.com/v3/3.1/mapsjs-service.js"></script>
+    <script type="text/javascript" src="https://js.api.here.com/v3/3.1/mapsjs-ui.js"></script>
+    <script type="text/javascript" src="https://js.api.here.com/v3/3.1/mapsjs-mapevents.js"></script>
     <script type="text/javascript" src="dist/main.js"></script>
   </body>
 </html>
