@@ -209,6 +209,8 @@ section {
 .menu-section {
   &__toggler {
     box-sizing: border-box;
+    overflow-x: scroll;
+    white-space: nowrap;
     span {
       display: inline-block;
       border: 1px solid $darkgray;
