@@ -1,40 +1,1365 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Ihr Imbiss Becker in Wuppertal. Wurst, Schnitzel, Pizza und alles was das Herz begehrt. Seit über 60 Jahren! Wir haben für sie geöffnet."
+    />
     <title>Imbiss Becker</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="src/images/favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="src/images/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="src/images/favicon/favicon-16x16.png" />
+    <link rel="manifest" href="src/images/favicon/site.webmanifest" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://js.api.here.com/v3/3.1/mapsjs-ui.css" />
     <link rel="stylesheet" href="dist/main.css" />
   </head>
   <body>
-    <section id="heroSection" class="hero is-fullheight">
-      <div class="hero-head">
-        <nav class="navbar">
-          <div class="container is-fluid">
-            <div class="navbar-brand">
-              <span class="navbar-burger" data-target="navbarMenuHeroA">
-                <span></span>
-                <span></span>
-                <span></span>
-              </span>
+    <div id="heroImage"></div>
+    <section class="hero-section">
+      <nav class="hero-section__nav hide-for-mobile">
+        <a href="#aboutus" class="hero-section__nav-item">Über uns</a>
+        <a href="#gallery" class="hero-section__nav-item">Gallerie</a>
+        <a href="#menu" class="hero-section__nav-item">Menü</a>
+        <a href="#map" class="hero-section__nav-item">Anfahrt</a>
+      </nav>
+      <h1 class="hero-section__title text-center full-width">Imbiss Becker</h1>
+    </section>
+
+    <section id="aboutus" class="about-us-section padding-around">
+      <div class="flex-container flex-row container container--small mobile-column">
+        <div class="flex-3 with-space--right">
+          <h1 class="text-black">Der Imbiss Becker in Wuppertal</h1>
+          <p>
+            Beim Imbiss Becker gibt es reichhaltige Auswahl, zb. Klassiker wie Currywurst, Pommes, Schnitzel in
+            Variationen, Pizza und weitere Köstlichkeiten. Bereits seit über 60 Jahren in Wuppertal versorgen wir
+            Besucher von morgens bis abends mit Wurst und mehr. Wir sind auch während Corona-Zeiten für Sie da!
+          </p>
+          <p style="color: crimson">Wir sind im Urlaub ab dem 29.6 und sind am 20.7 wieder für Sie da!</p>
+        </div>
+        <div class="flex-1 with-space--left">
+          <div class="info-group">
+            <h3 class="info-group__heading">Telefon</h3>
+            <div class="info-group__desc">(+49) 202 554128</div>
+          </div>
+          <div class="info-group">
+            <h3 class="info-group__heading">Standort</h3>
+            <div class="info-group__desc">
+              Kleiner Werth 40, Wuppertal
+              <a
+                href="https://www.google.com/maps/place/Imbiss+Becker/@51.2744076,7.2041187,17z/data=!3m1!4b1!4m5!3m4!1s0x47b928165b4e8701:0x9c94f6b2f794c602!8m2!3d51.2744076!4d7.2063074?hl=en-GB"
+                target="_blank"
+                >(Maps)</a
+              >
             </div>
-            <div id="navbarMenuHeroA" class="navbar-menu">
-              <div class="navbar-end">
-                <a class="navbar-item is-active"> Home </a>
-                <a class="navbar-item"> Examples </a>
-                <a class="navbar-item"> Documentation </a>
+          </div>
+          <div class="info-group">
+            <h3 class="info-group__heading">Öffnungszeiten</h3>
+            <div class="info-group__desc">
+              <div class="flex-container">
+                <div class="flex-1">Mo-Sa:</div>
+                <div class="flex-2">11:00 - 22:00</div>
+              </div>
+              <div class="flex-container">
+                <div class="flex-1">So:</div>
+                <div class="flex-2">13:00 - 22:00</div>
               </div>
             </div>
           </div>
-        </nav>
-      </div>
-      <div class="hero-body">
-        <div class="container">
-          <p class="title has-text-centered">Hero</p>
         </div>
       </div>
     </section>
+
+    <section id="gallery" class="gallery-section">
+      <div class="splide container">
+        <div class="splide__track">
+          <ul class="splide__list">
+            <li class="splide__slide">
+              <div class="splide__slide__container">
+                <img src="src/images/becker.jpg" />
+              </div>
+            </li>
+            <li class="splide__slide">
+              <div class="splide__slide__container">
+                <img src="src/images/innen.jpg" />
+              </div>
+            </li>
+            <li class="splide__slide">
+              <div class="splide__slide__container">
+                <img src="src/images/urkunde.jpg" />
+              </div>
+            </li>
+            <li class="splide__slide">
+              <div class="splide__slide__container">
+                <img src="src/images/artikel.jpg" />
+              </div>
+            </li>
+            <li class="splide__slide">
+              <div class="splide__slide__container">
+                <img src="src/images/collage.jpg" />
+              </div>
+            </li>
+            <li class="splide__slide">
+              <div class="splide__slide__container">
+                <img src="src/images/old.jpg" />
+              </div>
+            </li>
+            <li class="splide__slide">
+              <div class="splide__slide__container">
+                <img src="src/images/currywurst.jpg" />
+              </div>
+            </li>
+            <li class="splide__slide">
+              <div class="splide__slide__container">
+                <img src="src/images/gyros.jpg" />
+              </div>
+            </li>
+            <li class="splide__slide">
+              <div class="splide__slide__container">
+                <img src="src/images/pizza.jpeg" />
+              </div>
+            </li>
+            <li class="splide__slide">
+              <div class="splide__slide__container">
+                <img src="src/images/pizza2.jpg" />
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="menu" class="menu-section padding-around">
+      <div class="menu-section__toggler container with-space padding-around">
+        <span class="active" data-toggle-id="cat-1">Imbissgerichte</span>
+        <span data-toggle-id="cat-2">Koteletts</span>
+        <span data-toggle-id="cat-3">Schnitzel vom Schwein</span>
+        <span data-toggle-id="cat-4">Gyrosgerichte</span>
+        <span data-toggle-id="cat-5">Vom Spieß</span>
+        <span data-toggle-id="cat-6">Nudelgerichte</span>
+        <span data-toggle-id="cat-7">Salate ohne Konservierungsstoffe</span>
+        <span data-toggle-id="cat-8">Salate mit Konservierungsstoffen</span>
+        <span data-toggle-id="cat-9">Pizza groß</span>
+        <span data-toggle-id="cat-10">Pizza klein</span>
+        <span data-toggle-id="cat-11">Getränke</span>
+      </div>
+      <div class="menu-cart container">
+        <div id="cat-1" class="menu-cart__category active">
+          <h2 class="menu-cart__title">Imbissgerichte</h2>
+          <div class="menu-cart__container">
+            <div class="menu-cart__item">
+              <div class="menu-cart__item-title">
+                <h4>40 Bratwurst</h4>
+                <span class="menu-cart__item-price">2,40€</span>
+              </div>
+            </div>
+            <div class="menu-cart__item">
+              <div class="menu-cart__item-title">
+                <h4>41 Currywurst</h4>
+                <span class="menu-cart__item-price">2,70€</span>
+              </div>
+            </div>
+            <div class="menu-cart__item">
+              <div class="menu-cart__item-title">
+                <h4>42 Zigeunerwurst</h4>
+                <span class="menu-cart__item-price">3,00€</span>
+              </div>
+            </div>
+            <div class="menu-cart__item">
+              <div class="menu-cart__item-title">
+                <h4>43 Jägerwurst</h4>
+                <span class="menu-cart__item-price">3,40€</span>
+              </div>
+            </div>
+            <div class="menu-cart__item">
+              <div class="menu-cart__item-title">
+                <h4>44 Currywurst</h4>
+                <span class="menu-cart__item-price">3,20€</span>
+              </div>
+              <p class="menu-cart__item-desc">mit Zwiebeln</p>
+            </div>
+            <div class="menu-cart__item">
+              <div class="menu-cart__item-title">
+                <h4>45 Zigeunerwurst</h4>
+                <span class="menu-cart__item-price">3,40€</span>
+              </div>
+              <p class="menu-cart__item-desc">mit Zwiebeln</p>
+            </div>
+            <div class="menu-cart__item">
+              <div class="menu-cart__item-title">
+                <h4>46 Krakauer</h4>
+                <span class="menu-cart__item-price">3,00€</span>
+              </div>
+            </div>
+            <div class="menu-cart__item">
+              <div class="menu-cart__item-title">
+                <h4>47 Krakauer-Currywurst</h4>
+                <span class="menu-cart__item-price">3,20€</span>
+              </div>
+            </div>
+            <div class="menu-cart__item">
+              <div class="menu-cart__item-title">
+                <h4>48 Bratklops</h4>
+                <span class="menu-cart__item-price">1,90€</span>
+              </div>
+            </div>
+            <div class="menu-cart__item">
+              <div class="menu-cart__item-title">
+                <h4>49 Schaschlik</h4>
+                <span class="menu-cart__item-price">4,30€</span>
+              </div>
+            </div>
+            <div class="menu-cart__item">
+              <div class="menu-cart__item-title">
+                <h4>50 Halbes Hähnchen</h4>
+                <span class="menu-cart__item-price">4,20€</span>
+              </div>
+            </div>
+            <div class="menu-cart__item">
+              <div class="menu-cart__item-title">
+                <h4>51 Pommes</h4>
+                <span class="menu-cart__item-price">1,70€</span>
+              </div>
+              <p class="menu-cart__item-desc">klein</p>
+            </div>
+            <div class="menu-cart__item">
+              <div class="menu-cart__item-title">
+                <h4>52 Pommes</h4>
+                <span class="menu-cart__item-price">2,20€</span>
+              </div>
+              <p class="menu-cart__item-desc">mittel</p>
+            </div>
+            <div class="menu-cart__item">
+              <div class="menu-cart__item-title">
+                <h4>53 Pommes</h4>
+                <span class="menu-cart__item-price">2,40€</span>
+              </div>
+              <p class="menu-cart__item-desc">groß</p>
+            </div>
+            <div class="menu-cart__item">
+              <div class="menu-cart__item-title">
+                <h4>54 Mayo (50% Fett) oder Ketchup</h4>
+                <span class="menu-cart__item-price">0,50€</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="cat-2" class="menu-cart__category">
+          <h2 class="menu-cart__title">Koteletts</h2>
+          <div class="menu-cart__container">
+            <div class="menu-cart__item">
+              <div class="menu-cart__item-title">
+                <h4>55 Kotelett</h4>
+                <span class="menu-cart__item-price">6,00€</span>
+              </div>
+            </div>
+            <div class="menu-cart__item">
+              <div class="menu-cart__item-title">
+                <h4>56 Kotelett</h4>
+                <span class="menu-cart__item-price">9,00€</span>
+              </div>
+              <p class="menu-cart__item-desc">mit Spiegelei, Pommes und Salat</p>
+            </div>
+            <div class="menu-cart__item">
+              <div class="menu-cart__item-title">
+                <h4>57 Zwiebelkotelett</h4>
+                <span class="menu-cart__item-price">9,50€</span>
+              </div>
+              <p class="menu-cart__item-desc">mit Pommes und Salat</p>
+            </div>
+            <div class="menu-cart__item">
+              <div class="menu-cart__item-title">
+                <h4>58 Zigeunerkotelett</h4>
+                <span class="menu-cart__item-price">9,50€</span>
+              </div>
+              <p class="menu-cart__item-desc">mit Pommes und Salat</p>
+            </div>
+            <div class="menu-cart__item">
+              <div class="menu-cart__item-title">
+                <h4>59 Jägerkotelett</h4>
+                <span class="menu-cart__item-price">9,50€</span>
+              </div>
+              <p class="menu-cart__item-desc">mit Pommes und Salat</p>
+            </div>
+          </div>
+        </div>
+
+        <div id="cat-3" class="menu-cart__category">
+          <h2 class="menu-cart__title">Schnitzel vom Schwein</h2>
+          <div class="menu-cart__container">
+            <div class="menu-cart__item">
+              <div class="menu-cart__item-title">
+                <h4>60 Schnitzel einfach</h4>
+                <span class="menu-cart__item-price">6,50€</span>
+              </div>
+            </div>
+            <div class="menu-cart__item">
+              <div class="menu-cart__item-title">
+                <h4>61 Schnitzel</h4>
+                <span class="menu-cart__item-price">9,50€</span>
+              </div>
+              <p class="menu-cart__item-desc">mit Spiegelei, Pommes und Salat</p>
+            </div>
+            <div class="menu-cart__item">
+              <div class="menu-cart__item-title">
+                <h4>62 Zwiebelschnitzel</h4>
+                <span class="menu-cart__item-price">9,50€</span>
+              </div>
+              <p class="menu-cart__item-desc">mit Pommes und Salat</p>
+            </div>
+            <div class="menu-cart__item">
+              <div class="menu-cart__item-title">
+                <h4>63 Zwiebelschnitzel</h4>
+                <span class="menu-cart__item-price">9,50€</span>
+              </div>
+              <p class="menu-cart__item-desc">mit Pommes</p>
+            </div>
+            <div class="menu-cart__item">
+              <div class="menu-cart__item-title">
+                <h4>64 Jägerschnitzel</h4>
+                <span class="menu-cart__item-price">9,50€</span>
+              </div>
+              <p class="menu-cart__item-desc">mit Pommes und Salat</p>
+            </div>
+            <div class="menu-cart__item">
+              <div class="menu-cart__item-title">
+                <h4>65 Jägerschnitzel</h4>
+                <span class="menu-cart__item-price">9,00€</span>
+              </div>
+              <p class="menu-cart__item-desc">mit Pommes</p>
+            </div>
+            <div class="menu-cart__item">
+              <div class="menu-cart__item-title">
+                <h4>66 Jägerschnitzel</h4>
+                <span class="menu-cart__item-price">10,50€</span>
+              </div>
+              <p class="menu-cart__item-desc">mit Spiegelei, Pommes und Salat</p>
+            </div>
+            <div class="menu-cart__item">
+              <div class="menu-cart__item-title">
+                <h4>67 Jägerschnitzel</h4>
+                <span class="menu-cart__item-price">10,50€</span>
+              </div>
+              <p class="menu-cart__item-desc">mit Käse überbacken, Pommes und Salat</p>
+            </div>
+            <div class="menu-cart__item">
+              <div class="menu-cart__item-title">
+                <h4>68 Zigeunerschnitzel</h4>
+                <span class="menu-cart__item-price">9,00€</span>
+              </div>
+              <p class="menu-cart__item-desc">mit Pommes</p>
+            </div>
+            <div class="menu-cart__item">
+              <div class="menu-cart__item-title">
+                <h4>69 Zigeunerschnitzel</h4>
+                <span class="menu-cart__item-price">9,50€</span>
+              </div>
+              <p class="menu-cart__item-desc">mit Pommes und Salat</p>
+            </div>
+            <div class="menu-cart__item">
+              <div class="menu-cart__item-title">
+                <h4>70 Zigeunerschnitzel</h4>
+                <span class="menu-cart__item-price">10,50€</span>
+              </div>
+              <p class="menu-cart__item-desc">mit Käse überbacken, Pommes und Salat</p>
+            </div>
+            <div class="menu-cart__item">
+              <div class="menu-cart__item-title">
+                <h4>71 Zigeunerschnitzel</h4>
+                <span class="menu-cart__item-price">10,50€</span>
+              </div>
+              <p class="menu-cart__item-desc">mit Spiegelei, Pommes und Salat</p>
+            </div>
+            <div class="menu-cart__item">
+              <div class="menu-cart__item-title">
+                <h4>72 Hawaii-Schnitzel</h4>
+                <span class="menu-cart__item-price">10,50€</span>
+              </div>
+              <p class="menu-cart__item-desc">mit Pommes und Salat</p>
+            </div>
+            <div class="menu-cart__item">
+              <div class="menu-cart__item-title">
+                <h4>73 Bolognese-Schnitzel</h4>
+                <span class="menu-cart__item-price">9,50€</span>
+              </div>
+              <p class="menu-cart__item-desc">mit Pommes und Salat</p>
+            </div>
+            <div class="menu-cart__item">
+              <div class="menu-cart__item-title">
+                <h4>74 Bolognese-Schnitzel</h4>
+                <span class="menu-cart__item-price">9,00€</span>
+              </div>
+              <p class="menu-cart__item-desc">mit Hackfleischsauce und Pommes</p>
+            </div>
+            <div class="menu-cart__item">
+              <div class="menu-cart__item-title">
+                <h4>75 Bolognese-Schnitzel</h4>
+                <span class="menu-cart__item-price">10,50€</span>
+              </div>
+              <p class="menu-cart__item-desc">mit Käse überbacken, Hackfleischsauce, Pommes und Salat</p>
+            </div>
+            <div class="menu-cart__item">
+              <div class="menu-cart__item-title">
+                <h4>76 Cordon-Bleu</h4>
+                <span class="menu-cart__item-price">10,50€</span>
+              </div>
+              <p class="menu-cart__item-desc">mit Käse und Schinken gefüllt, Pommes und Salat</p>
+            </div>
+            <div class="menu-cart__item">
+              <div class="menu-cart__item-title">
+                <h4>77 Schnitzel</h4>
+                <span class="menu-cart__item-price">10,50€</span>
+              </div>
+              <p class="menu-cart__item-desc">mit Spinat und Käse überbacken, Pommes und Salat</p>
+            </div>
+            <div class="menu-cart__item">
+              <div class="menu-cart__item-title">
+                <h4>78 Schnitzel</h4>
+                <span class="menu-cart__item-price">10,50€</span>
+              </div>
+              <p class="menu-cart__item-desc">mit Spinat, Schinken und Käse überbacken, Pommes und Salat</p>
+            </div>
+          </div>
+        </div>
+
+        <div id="cat-4" class="menu-cart__category">
+          <h2 class="menu-cart__title">Gyrosgerichte</h2>
+          <div class="menu-cart__container">
+            <div class="menu-cart__item">
+              <div class="menu-cart__item-title">
+                <h4>80 Gyros</h4>
+                <span class="menu-cart__item-price">8,50€</span>
+              </div>
+              <p class="menu-cart__item-desc">mit Pommes</p>
+            </div>
+            <div class="menu-cart__item">
+              <div class="menu-cart__item-title">
+                <h4>81 Gyros</h4>
+                <span class="menu-cart__item-price">9,00€</span>
+              </div>
+              <p class="menu-cart__item-desc">mit Salat</p>
+            </div>
+            <div class="menu-cart__item">
+              <div class="menu-cart__item-title">
+                <h4>82 Gyros</h4>
+                <span class="menu-cart__item-price">9,50€</span>
+              </div>
+              <p class="menu-cart__item-desc">mit Pommes und Salat</p>
+            </div>
+            <div class="menu-cart__item">
+              <div class="menu-cart__item-title">
+                <h4>83 Gyros</h4>
+                <span class="menu-cart__item-price">6,50€</span>
+              </div>
+              <p class="menu-cart__item-desc">in der Schale mit Zwiebeln</p>
+            </div>
+            <div class="menu-cart__item">
+              <div class="menu-cart__item-title">
+                <h4>84 Gyros</h4>
+                <span class="menu-cart__item-price">7,50€</span>
+              </div>
+              <p class="menu-cart__item-desc">mit Zwiebeln und Zaziki</p>
+            </div>
+            <div class="menu-cart__item">
+              <div class="menu-cart__item-title">
+                <h4>85 Zigeunergyros</h4>
+                <span class="menu-cart__item-price">10,50€</span>
+              </div>
+              <p class="menu-cart__item-desc">mit Zigeunersauce, Pommes und Salat</p>
+            </div>
+            <div class="menu-cart__item">
+              <div class="menu-cart__item-title">
+                <h4>86 Jägergyros</h4>
+                <span class="menu-cart__item-price">10,50€</span>
+              </div>
+              <p class="menu-cart__item-desc">mit Jägersauce, Pommes und Salat</p>
+            </div>
+            <div class="menu-cart__item">
+              <div class="menu-cart__item-title">
+                <h4>87 Gyros-Pita</h4>
+                <span class="menu-cart__item-price">4,00€</span>
+              </div>
+            </div>
+            <div class="menu-cart__item">
+              <div class="menu-cart__item-title">
+                <h4>88 Gyros-Pita</h4>
+                <span class="menu-cart__item-price">4,50€</span>
+              </div>
+              <p class="menu-cart__item-desc">mit Zaziki und Salat</p>
+            </div>
+            <div class="menu-cart__item">
+              <div class="menu-cart__item-title">
+                <h4>89 Gyros-Spezial</h4>
+                <span class="menu-cart__item-price">11,50€</span>
+              </div>
+              <p class="menu-cart__item-desc">(überbacken) Tomaten, Paprika, Schafskäse, Pommes und Salat</p>
+            </div>
+            <div class="menu-cart__item">
+              <div class="menu-cart__item-title">
+                <h4>90 Gyros</h4>
+                <span class="menu-cart__item-price">10,80€</span>
+              </div>
+              <p class="menu-cart__item-desc">mit Käse überbacken, Pommes und Salat</p>
+            </div>
+          </div>
+        </div>
+
+        <div id="cat-5" class="menu-cart__category">
+          <h2 class="menu-cart__title">Vom Spieß</h2>
+          <div class="menu-cart__container">
+            <div class="menu-cart__item">
+              <div class="menu-cart__item-title">
+                <h4>95 Spießbraten</h4>
+                <span class="menu-cart__item-price">7,50€</span>
+              </div>
+              <p class="menu-cart__item-desc">mit Zwiebeln</p>
+            </div>
+            <div class="menu-cart__item">
+              <div class="menu-cart__item-title">
+                <h4>96 Spießbraten</h4>
+                <span class="menu-cart__item-price">8,50€</span>
+              </div>
+              <p class="menu-cart__item-desc">mit Pommes</p>
+            </div>
+            <div class="menu-cart__item">
+              <div class="menu-cart__item-title">
+                <h4>97 Spießbraten</h4>
+                <span class="menu-cart__item-price">9,00€</span>
+              </div>
+              <p class="menu-cart__item-desc">mit Salat</p>
+            </div>
+            <div class="menu-cart__item">
+              <div class="menu-cart__item-title">
+                <h4>98 Spießbraten</h4>
+                <span class="menu-cart__item-price">10,00€</span>
+              </div>
+              <p class="menu-cart__item-desc">mit Pommes und Salat</p>
+            </div>
+          </div>
+        </div>
+
+        <div id="cat-6" class="menu-cart__category">
+          <h2 class="menu-cart__title">Nudelgerichte</h2>
+          <div class="menu-cart__container">
+            <div class="menu-cart__item">
+              <div class="menu-cart__item-title">
+                <h4>100 Spaghetti Bolognese</h4>
+                <span class="menu-cart__item-price">7,50€</span>
+              </div>
+              <p class="menu-cart__item-desc">mit Hackfleischsauce</p>
+            </div>
+            <div class="menu-cart__item">
+              <div class="menu-cart__item-title">
+                <h4>101 Spaghetti Spezial</h4>
+                <span class="menu-cart__item-price">8,50€</span>
+              </div>
+              <p class="menu-cart__item-desc">mit Hackfleischsauce, Tomaten, mit Käse überbacken</p>
+            </div>
+            <div class="menu-cart__item">
+              <div class="menu-cart__item-title">
+                <h4>102 Lasagne</h4>
+                <span class="menu-cart__item-price">8,00€</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="cat-7" class="menu-cart__category">
+          <h2 class="menu-cart__title">Salate ohne Konservierungsstoffe</h2>
+          <div class="menu-cart__container">
+            <div class="menu-cart__item">
+              <div class="menu-cart__item-title">
+                <h4>104 Bauernsalat</h4>
+                <span class="menu-cart__item-price">6,50€</span>
+              </div>
+              <p class="menu-cart__item-desc">mit Tomaten, Gurken, Oliven, Schafskäse, Peperoni, Zwiebeln</p>
+            </div>
+            <div class="menu-cart__item">
+              <div class="menu-cart__item-title">
+                <h4>105 Schafskäse</h4>
+                <span class="menu-cart__item-price">5,50€</span>
+              </div>
+              <p class="menu-cart__item-desc">mit Tomaten, Gurken angemacht mit Essig und Öl</p>
+            </div>
+            <div class="menu-cart__item">
+              <div class="menu-cart__item-title">
+                <h4>106 Tomatensalat</h4>
+                <span class="menu-cart__item-price">2,50€</span>
+              </div>
+            </div>
+            <div class="menu-cart__item">
+              <div class="menu-cart__item-title">
+                <h4>107 Gurkensalat</h4>
+                <span class="menu-cart__item-price">2,50€</span>
+              </div>
+            </div>
+            <div class="menu-cart__item">
+              <div class="menu-cart__item-title">
+                <h4>108 Bohnensalat</h4>
+                <span class="menu-cart__item-price">2,50€</span>
+              </div>
+            </div>
+            <div class="menu-cart__item">
+              <div class="menu-cart__item-title">
+                <h4>109 Krautsalat</h4>
+                <span class="menu-cart__item-price">2,50€</span>
+              </div>
+            </div>
+            <div class="menu-cart__item">
+              <div class="menu-cart__item-title">
+                <h4>110 Zaziki</h4>
+                <span class="menu-cart__item-price">3,00€</span>
+              </div>
+              <p class="menu-cart__item-desc">Jogurtsalat mit Sahne</p>
+            </div>
+            <div class="menu-cart__item">
+              <div class="menu-cart__item-title">
+                <h4>111 Oliven</h4>
+                <span class="menu-cart__item-price">3,00€</span>
+              </div>
+              <p class="menu-cart__item-desc">Portion</p>
+            </div>
+            <div class="menu-cart__item">
+              <div class="menu-cart__item-title">
+                <h4>112 Peperoni</h4>
+                <span class="menu-cart__item-price">3,00€</span>
+              </div>
+              <p class="menu-cart__item-desc">Portion</p>
+            </div>
+          </div>
+        </div>
+
+        <div id="cat-8" class="menu-cart__category">
+          <h2 class="menu-cart__title">Salate mit Konservierungsstoffen</h2>
+          <div class="menu-cart__container">
+            <div class="menu-cart__item">
+              <div class="menu-cart__item-title">
+                <h4>116 Kartoffelsalat</h4>
+                <span class="menu-cart__item-price">3,00€</span>
+              </div>
+              <p class="menu-cart__item-desc">mit Sahne</p>
+            </div>
+            <div class="menu-cart__item">
+              <div class="menu-cart__item-title">
+                <h4>117 Nudelsalat</h4>
+                <span class="menu-cart__item-price">3,00€</span>
+              </div>
+              <p class="menu-cart__item-desc">mit Sahne</p>
+            </div>
+            <div class="menu-cart__item">
+              <div class="menu-cart__item-title">
+                <h4>118 Mexikosalat</h4>
+                <span class="menu-cart__item-price">3,00€</span>
+              </div>
+              <p class="menu-cart__item-desc">mit Sahne</p>
+            </div>
+            <div class="menu-cart__item">
+              <div class="menu-cart__item-title">
+                <h4>119 Mais-Salat</h4>
+                <span class="menu-cart__item-price">3,00€</span>
+              </div>
+              <p class="menu-cart__item-desc">mit Sahne</p>
+            </div>
+            <div class="menu-cart__item">
+              <div class="menu-cart__item-title">
+                <h4>120 Bohnensalat</h4>
+                <span class="menu-cart__item-price">3,00€</span>
+              </div>
+              <p class="menu-cart__item-desc">mit Sahne</p>
+            </div>
+            <div class="menu-cart__item">
+              <div class="menu-cart__item-title">
+                <h4>121 Gurkensalat</h4>
+                <span class="menu-cart__item-price">3,00€</span>
+              </div>
+              <p class="menu-cart__item-desc">mit Sahne</p>
+            </div>
+            <div class="menu-cart__item">
+              <div class="menu-cart__item-title">
+                <h4>122 Krautsalat</h4>
+                <span class="menu-cart__item-price">3,00€</span>
+              </div>
+              <p class="menu-cart__item-desc">mit Sahne</p>
+            </div>
+            <div class="menu-cart__item">
+              <div class="menu-cart__item-title">
+                <h4>123 Gemischter Salat</h4>
+                <span class="menu-cart__item-price">3,00€</span>
+              </div>
+            </div>
+            <div class="menu-cart__item">
+              <div class="menu-cart__item-title">
+                <h4>124 Thunfischsalat</h4>
+                <span class="menu-cart__item-price">6,50€</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="cat-9" class="menu-cart__category">
+          <h2 class="menu-cart__title">Pizza groß</h2>
+          <div class="menu-cart__container">
+            <div class="menu-cart__item">
+              <div class="menu-cart__item-title">
+                <h4>1 Magherita</h4>
+                <span class="menu-cart__item-price">7,00€</span>
+              </div>
+              <p class="menu-cart__item-desc">Tomaten, Käse, Oregano</p>
+            </div>
+            <div class="menu-cart__item">
+              <div class="menu-cart__item-title">
+                <h4>2 Neapolitana</h4>
+                <span class="menu-cart__item-price">8,00€</span>
+              </div>
+              <p class="menu-cart__item-desc">Tomaten, Käse, Oliven, Oregano</p>
+            </div>
+            <div class="menu-cart__item">
+              <div class="menu-cart__item-title">
+                <h4>3 Sardellen</h4>
+                <span class="menu-cart__item-price">8,00€</span>
+              </div>
+              <p class="menu-cart__item-desc">Tomaten, Käse, Sardellen</p>
+            </div>
+            <div class="menu-cart__item">
+              <div class="menu-cart__item-title">
+                <h4>4 Salami</h4>
+                <span class="menu-cart__item-price">8,00€</span>
+              </div>
+              <p class="menu-cart__item-desc">Tomaten, Käse, Salami</p>
+            </div>
+            <div class="menu-cart__item">
+              <div class="menu-cart__item-title">
+                <h4>5 Rustika</h4>
+                <span class="menu-cart__item-price">8,50€</span>
+              </div>
+              <p class="menu-cart__item-desc">Tomaten, Käse, Sardellen, Salami</p>
+            </div>
+            <div class="menu-cart__item">
+              <div class="menu-cart__item-title">
+                <h4>6 Funghi</h4>
+                <span class="menu-cart__item-price">8,00€</span>
+              </div>
+              <p class="menu-cart__item-desc">Tomaten, Käse, Champignons</p>
+            </div>
+            <div class="menu-cart__item">
+              <div class="menu-cart__item-title">
+                <h4>7 Quatro-Stagnioni</h4>
+                <span class="menu-cart__item-price">9,50€</span>
+              </div>
+              <p class="menu-cart__item-desc">Tomaten, Käse, Champignongs, Sardellen, Schinken, Oliven</p>
+            </div>
+            <div class="menu-cart__item">
+              <div class="menu-cart__item-title">
+                <h4>8 Mista</h4>
+                <span class="menu-cart__item-price">9,50€</span>
+              </div>
+              <p class="menu-cart__item-desc">Tomaten, Käse, gekochter Schinken, Oregano, Champignongs, Salami</p>
+            </div>
+            <div class="menu-cart__item">
+              <div class="menu-cart__item-title">
+                <h4>9 Schinken</h4>
+                <span class="menu-cart__item-price">8,50€</span>
+              </div>
+              <p class="menu-cart__item-desc">Tomaten, Käse, gekochter Schinken</p>
+            </div>
+            <div class="menu-cart__item">
+              <div class="menu-cart__item-title">
+                <h4>10 Frankreich</h4>
+                <span class="menu-cart__item-price">8,00€</span>
+              </div>
+              <p class="menu-cart__item-desc">Tomaten, Käse, Zwiebelringe</p>
+            </div>
+            <div class="menu-cart__item">
+              <div class="menu-cart__item-title">
+                <h4>11 Boscajola</h4>
+                <span class="menu-cart__item-price">9,50€</span>
+              </div>
+              <p class="menu-cart__item-desc">Tomaten, Käse, Thunfisch, Oliven, Zwiebeln</p>
+            </div>
+            <div class="menu-cart__item">
+              <div class="menu-cart__item-title">
+                <h4>12 Gyros</h4>
+                <span class="menu-cart__item-price">9,50€</span>
+              </div>
+              <p class="menu-cart__item-desc">Tomaten, Käse, Gyros, Zwiebeln</p>
+            </div>
+            <div class="menu-cart__item">
+              <div class="menu-cart__item-title">
+                <h4>13 Diavolo (scharf)</h4>
+                <span class="menu-cart__item-price">9,50€</span>
+              </div>
+              <p class="menu-cart__item-desc">Tomaten, Käse, Peperoni, Oliven, Salami, Oregano, Schafskäse</p>
+            </div>
+            <div class="menu-cart__item">
+              <div class="menu-cart__item-title">
+                <h4>14 Taverne</h4>
+                <span class="menu-cart__item-price">9,50€</span>
+              </div>
+              <p class="menu-cart__item-desc">
+                nach Art des Hauses, Tomaten, Käse, gekochter Schinken, Champignongs, rote Paprika
+              </p>
+            </div>
+            <div class="menu-cart__item">
+              <div class="menu-cart__item-title">
+                <h4>15 Privata</h4>
+                <span class="menu-cart__item-price">9,50€</span>
+              </div>
+              <p class="menu-cart__item-desc">Tomaten, Käse, Fleischsauce, Schinken</p>
+            </div>
+            <div class="menu-cart__item">
+              <div class="menu-cart__item-title">
+                <h4>16 Oriental</h4>
+                <span class="menu-cart__item-price">10,50€</span>
+              </div>
+              <p class="menu-cart__item-desc">
+                Tomaten, Käse, Zwiebeln, Oliven, rote Paprikaschoten, gekochter Schinken, geschnitten vom Schwein
+              </p>
+            </div>
+            <div class="menu-cart__item">
+              <div class="menu-cart__item-title">
+                <h4>17 Scampis</h4>
+                <span class="menu-cart__item-price">9,90€</span>
+              </div>
+              <p class="menu-cart__item-desc">Tomaten, Käse, Scampis</p>
+            </div>
+            <div class="menu-cart__item">
+              <div class="menu-cart__item-title">
+                <h4>18 Bistro</h4>
+                <span class="menu-cart__item-price">9,50€</span>
+              </div>
+              <p class="menu-cart__item-desc">Tomaten, Käse, Artichocken, Champignongs, Schinken, Paprika</p>
+            </div>
+            <div class="menu-cart__item">
+              <div class="menu-cart__item-title">
+                <h4>19 Donner</h4>
+                <span class="menu-cart__item-price">9,50€</span>
+              </div>
+              <p class="menu-cart__item-desc">
+                Tomaten, Käse, Oregano, Gyros, Peperoni, frische Tomatenscheiben, Zwiebeln
+              </p>
+            </div>
+            <div class="menu-cart__item">
+              <div class="menu-cart__item-title">
+                <h4>20 Amalfi</h4>
+                <span class="menu-cart__item-price">8,50€</span>
+              </div>
+              <p class="menu-cart__item-desc">Tomaten, Käse, Eier, roter Paprika</p>
+            </div>
+            <div class="menu-cart__item">
+              <div class="menu-cart__item-title">
+                <h4>21 Verona</h4>
+                <span class="menu-cart__item-price">9,50€</span>
+              </div>
+              <p class="menu-cart__item-desc">Tomaten, Käse, Thunfisch, Pilze, Oregano</p>
+            </div>
+            <div class="menu-cart__item">
+              <div class="menu-cart__item-title">
+                <h4>22 Greco</h4>
+                <span class="menu-cart__item-price">10,50€</span>
+              </div>
+              <p class="menu-cart__item-desc">Tomaten, Käse, Gyros, Schafskäse, Peperoni, Tomatenscheiben, Oregano</p>
+            </div>
+            <div class="menu-cart__item">
+              <div class="menu-cart__item-title">
+                <h4>23 Riviera</h4>
+                <span class="menu-cart__item-price">10,50€</span>
+              </div>
+              <p class="menu-cart__item-desc">Tomaten, Käse, Oregano</p>
+            </div>
+            <div class="menu-cart__item">
+              <div class="menu-cart__item-title">
+                <h4>24 Hawaii</h4>
+                <span class="menu-cart__item-price">9,50€</span>
+              </div>
+              <p class="menu-cart__item-desc">Tomaten, Käse, Schinken, Ananas</p>
+            </div>
+            <div class="menu-cart__item">
+              <div class="menu-cart__item-title">
+                <h4>25 Spinat</h4>
+                <span class="menu-cart__item-price">8,50€</span>
+              </div>
+              <p class="menu-cart__item-desc">Tomaten, Käse, Spinat, Ei, Knoblauch</p>
+            </div>
+            <div class="menu-cart__item">
+              <div class="menu-cart__item-title">
+                <h4>26 Gami</h4>
+                <span class="menu-cart__item-price">9,50€</span>
+              </div>
+              <p class="menu-cart__item-desc">Tomaten, Käse, Oliven, Gyros, Zwiebeln, Oliven, Peperoni</p>
+            </div>
+            <div class="menu-cart__item">
+              <div class="menu-cart__item-title">
+                <h4>27 Becker</h4>
+                <span class="menu-cart__item-price">9,50€</span>
+              </div>
+              <p class="menu-cart__item-desc">
+                frische Tomatenscheiben, Käse, Paprika, Zwiebeln, Oliven, Peperoni, Kopfsalat
+              </p>
+            </div>
+            <div class="menu-cart__item">
+              <div class="menu-cart__item-title">
+                <h4>28 Toscana</h4>
+                <span class="menu-cart__item-price">9,50€</span>
+              </div>
+              <p class="menu-cart__item-desc">Tomaten, Käse, Thunfisch, Schinken</p>
+            </div>
+            <div class="menu-cart__item">
+              <div class="menu-cart__item-title">
+                <h4>29 Veneta</h4>
+                <span class="menu-cart__item-price">9,50€</span>
+              </div>
+              <p class="menu-cart__item-desc">Tomaten, Käse, Salami, Artichocken</p>
+            </div>
+            <div class="menu-cart__item">
+              <div class="menu-cart__item-title">
+                <h4>30 Hellas</h4>
+                <span class="menu-cart__item-price">9,00€</span>
+              </div>
+              <p class="menu-cart__item-desc">Tomaten, Käse, Schinken, Salami, Thunfisch, Artichocken</p>
+            </div>
+            <div class="menu-cart__item">
+              <div class="menu-cart__item-title">
+                <h4>31 Spezial</h4>
+                <span class="menu-cart__item-price">9,50€</span>
+              </div>
+              <p class="menu-cart__item-desc">Tomaten, Käse, frische Tomatenscheiben, Schafskäse, Peperoni, Oliven</p>
+            </div>
+            <div class="menu-cart__item">
+              <div class="menu-cart__item-title">
+                <h4>32 Roma</h4>
+                <span class="menu-cart__item-price">9,50€</span>
+              </div>
+              <p class="menu-cart__item-desc">Tomaten, Käse, Schinken, Salami, Champignongs, Thunfisch</p>
+            </div>
+            <div class="menu-cart__item">
+              <div class="menu-cart__item-title">
+                <h4>33 Italiana</h4>
+                <span class="menu-cart__item-price">9,00€</span>
+              </div>
+              <p class="menu-cart__item-desc">Tomaten, Käse, Spinat, Schafskäse, Knoblauch</p>
+            </div>
+            <div class="menu-cart__item">
+              <div class="menu-cart__item-title">
+                <h4>34 Bazi</h4>
+                <span class="menu-cart__item-price">9,50€</span>
+              </div>
+              <p class="menu-cart__item-desc">Tomaten, Käse, Spinat, Schinken, Knoblauch, Schafskäse</p>
+            </div>
+            <div class="menu-cart__item">
+              <div class="menu-cart__item-title">
+                <h4>35 Wunsch-Pizza</h4>
+                <span class="menu-cart__item-price">11,50€</span>
+              </div>
+              <p class="menu-cart__item-desc">Zusammenstellung nach ihren Wünschen</p>
+            </div>
+            <div class="menu-cart__item">
+              <div class="menu-cart__item-title">
+                <h4>36 Calzone (gefüllt)</h4>
+                <span class="menu-cart__item-price">10,50€</span>
+              </div>
+              <p class="menu-cart__item-desc">Pilze, Zwiebeln, Gyros</p>
+            </div>
+            <div class="menu-cart__item">
+              <div class="menu-cart__item-title">
+                <h4>37 Calamari</h4>
+                <span class="menu-cart__item-price">9,00€</span>
+              </div>
+              <p class="menu-cart__item-desc">Tomaten, Käse, Knoblauch</p>
+            </div>
+            <div class="menu-cart__item">
+              <div class="menu-cart__item-title">
+                <h4>38 Frutti di Mare</h4>
+                <span class="menu-cart__item-price">9,00€</span>
+              </div>
+              <p class="menu-cart__item-desc">Tomaten, Käse, Meeresfrüchte</p>
+            </div>
+          </div>
+        </div>
+
+        <div id="cat-10" class="menu-cart__category">
+          <h2 class="menu-cart__title">Pizza klein</h2>
+          <div class="menu-cart__container">
+            <div class="menu-cart__item">
+              <div class="menu-cart__item-title">
+                <h4>1 Magherita</h4>
+                <span class="menu-cart__item-price">4,50€</span>
+              </div>
+              <p class="menu-cart__item-desc">Tomaten, Käse, Oregano</p>
+            </div>
+            <div class="menu-cart__item">
+              <div class="menu-cart__item-title">
+                <h4>2 Neapolitana</h4>
+                <span class="menu-cart__item-price">5,00€</span>
+              </div>
+              <p class="menu-cart__item-desc">Tomaten, Käse, Oliven, Oregano</p>
+            </div>
+            <div class="menu-cart__item">
+              <div class="menu-cart__item-title">
+                <h4>3 Sardellen</h4>
+                <span class="menu-cart__item-price">5,00€</span>
+              </div>
+              <p class="menu-cart__item-desc">Tomaten, Käse, Sardellen</p>
+            </div>
+            <div class="menu-cart__item">
+              <div class="menu-cart__item-title">
+                <h4>4 Salami</h4>
+                <span class="menu-cart__item-price">5,50€</span>
+              </div>
+              <p class="menu-cart__item-desc">Tomaten, Käse, Salami</p>
+            </div>
+            <div class="menu-cart__item">
+              <div class="menu-cart__item-title">
+                <h4>5 Rustika</h4>
+                <span class="menu-cart__item-price">5,50€</span>
+              </div>
+              <p class="menu-cart__item-desc">Tomaten, Käse, Sardellen, Salami</p>
+            </div>
+            <div class="menu-cart__item">
+              <div class="menu-cart__item-title">
+                <h4>6 Funghi</h4>
+                <span class="menu-cart__item-price">5,50€</span>
+              </div>
+              <p class="menu-cart__item-desc">Tomaten, Käse, Champignons</p>
+            </div>
+            <div class="menu-cart__item">
+              <div class="menu-cart__item-title">
+                <h4>7 Quatro-Stagnioni</h4>
+                <span class="menu-cart__item-price">7,50€</span>
+              </div>
+              <p class="menu-cart__item-desc">Tomaten, Käse, Champignongs, Sardellen, Schinken, Oliven</p>
+            </div>
+            <div class="menu-cart__item">
+              <div class="menu-cart__item-title">
+                <h4>8 Mista</h4>
+                <span class="menu-cart__item-price">7,50€</span>
+              </div>
+              <p class="menu-cart__item-desc">Tomaten, Käse, gekochter Schinken, Oregano, Champignongs, Salami</p>
+            </div>
+            <div class="menu-cart__item">
+              <div class="menu-cart__item-title">
+                <h4>9 Schinken</h4>
+                <span class="menu-cart__item-price">5,80€</span>
+              </div>
+              <p class="menu-cart__item-desc">Tomaten, Käse, gekochter Schinken</p>
+            </div>
+            <div class="menu-cart__item">
+              <div class="menu-cart__item-title">
+                <h4>10 Frankreich</h4>
+                <span class="menu-cart__item-price">6,00€</span>
+              </div>
+              <p class="menu-cart__item-desc">Tomaten, Käse, Zwiebelringe</p>
+            </div>
+            <div class="menu-cart__item">
+              <div class="menu-cart__item-title">
+                <h4>11 Boscajola</h4>
+                <span class="menu-cart__item-price">7,50€</span>
+              </div>
+              <p class="menu-cart__item-desc">Tomaten, Käse, Thunfisch, Oliven, Zwiebeln</p>
+            </div>
+            <div class="menu-cart__item">
+              <div class="menu-cart__item-title">
+                <h4>12 Gyros</h4>
+                <span class="menu-cart__item-price">7,50€</span>
+              </div>
+              <p class="menu-cart__item-desc">Tomaten, Käse, Gyros, Zwiebeln</p>
+            </div>
+            <div class="menu-cart__item">
+              <div class="menu-cart__item-title">
+                <h4>13 Diavolo (scharf)</h4>
+                <span class="menu-cart__item-price">7,50€</span>
+              </div>
+              <p class="menu-cart__item-desc">Tomaten, Käse, Peperoni, Oliven, Salami, Oregano, Schafskäse</p>
+            </div>
+            <div class="menu-cart__item">
+              <div class="menu-cart__item-title">
+                <h4>14 Taverne</h4>
+                <span class="menu-cart__item-price">7,50€</span>
+              </div>
+              <p class="menu-cart__item-desc">
+                nach Art des Hauses, Tomaten, Käse, gekochter Schinken, Champignongs, rote Paprika
+              </p>
+            </div>
+            <div class="menu-cart__item">
+              <div class="menu-cart__item-title">
+                <h4>15 Privata</h4>
+                <span class="menu-cart__item-price">7,50€</span>
+              </div>
+              <p class="menu-cart__item-desc">Tomaten, Käse, Fleischsauce, Schinken</p>
+            </div>
+            <div class="menu-cart__item">
+              <div class="menu-cart__item-title">
+                <h4>16 Oriental</h4>
+                <span class="menu-cart__item-price">8,50€</span>
+              </div>
+              <p class="menu-cart__item-desc">
+                Tomaten, Käse, Zwiebeln, Oliven, rote Paprikaschoten, gekochter Schinken, geschnitten vom Schwein
+              </p>
+            </div>
+            <div class="menu-cart__item">
+              <div class="menu-cart__item-title">
+                <h4>17 Scampis</h4>
+                <span class="menu-cart__item-price">7,00€</span>
+              </div>
+              <p class="menu-cart__item-desc">Tomaten, Käse, Scampis</p>
+            </div>
+            <div class="menu-cart__item">
+              <div class="menu-cart__item-title">
+                <h4>18 Bistro</h4>
+                <span class="menu-cart__item-price">7,50€</span>
+              </div>
+              <p class="menu-cart__item-desc">Tomaten, Käse, Artichocken, Champignongs, Schinken, Paprika</p>
+            </div>
+            <div class="menu-cart__item">
+              <div class="menu-cart__item-title">
+                <h4>19 Donner</h4>
+                <span class="menu-cart__item-price">8,00€</span>
+              </div>
+              <p class="menu-cart__item-desc">
+                Tomaten, Käse, Oregano, Gyros, Peperoni, frische Tomatenscheiben, Zwiebeln
+              </p>
+            </div>
+            <div class="menu-cart__item">
+              <div class="menu-cart__item-title">
+                <h4>20 Amalfi</h4>
+                <span class="menu-cart__item-price">7,50€</span>
+              </div>
+              <p class="menu-cart__item-desc">Tomaten, Käse, Eier, roter Paprika</p>
+            </div>
+            <div class="menu-cart__item">
+              <div class="menu-cart__item-title">
+                <h4>21 Verona</h4>
+                <span class="menu-cart__item-price">7,50€</span>
+              </div>
+              <p class="menu-cart__item-desc">Tomaten, Käse, Thunfisch, Pilze, Oregano</p>
+            </div>
+            <div class="menu-cart__item">
+              <div class="menu-cart__item-title">
+                <h4>22 Greco</h4>
+                <span class="menu-cart__item-price">8,50€</span>
+              </div>
+              <p class="menu-cart__item-desc">Tomaten, Käse, Gyros, Schafskäse, Peperoni, Tomatenscheiben, Oregano</p>
+            </div>
+            <div class="menu-cart__item">
+              <div class="menu-cart__item-title">
+                <h4>23 Riviera</h4>
+                <span class="menu-cart__item-price">7,50€</span>
+              </div>
+              <p class="menu-cart__item-desc">Tomaten, Käse, Oregano</p>
+            </div>
+            <div class="menu-cart__item">
+              <div class="menu-cart__item-title">
+                <h4>24 Hawaii</h4>
+                <span class="menu-cart__item-price">7,50€</span>
+              </div>
+              <p class="menu-cart__item-desc">Tomaten, Käse, Schinken, Ananas</p>
+            </div>
+            <div class="menu-cart__item">
+              <div class="menu-cart__item-title">
+                <h4>25 Spinat</h4>
+                <span class="menu-cart__item-price">6,50€</span>
+              </div>
+              <p class="menu-cart__item-desc">Tomaten, Käse, Spinat, Ei, Knoblauch</p>
+            </div>
+            <div class="menu-cart__item">
+              <div class="menu-cart__item-title">
+                <h4>26 Gami</h4>
+                <span class="menu-cart__item-price">7,50€</span>
+              </div>
+              <p class="menu-cart__item-desc">Tomaten, Käse, Oliven, Gyros, Zwiebeln, Oliven, Peperoni</p>
+            </div>
+            <div class="menu-cart__item">
+              <div class="menu-cart__item-title">
+                <h4>27 Becker</h4>
+                <span class="menu-cart__item-price">7,50€</span>
+              </div>
+              <p class="menu-cart__item-desc">
+                frische Tomatenscheiben, Käse, Paprika, Zwiebeln, Oliven, Peperoni, Kopfsalat
+              </p>
+            </div>
+            <div class="menu-cart__item">
+              <div class="menu-cart__item-title">
+                <h4>28 Toscana</h4>
+                <span class="menu-cart__item-price">7,50€</span>
+              </div>
+              <p class="menu-cart__item-desc">Tomaten, Käse, Thunfisch, Schinken</p>
+            </div>
+            <div class="menu-cart__item">
+              <div class="menu-cart__item-title">
+                <h4>29 Veneta</h4>
+                <span class="menu-cart__item-price">6,50€</span>
+              </div>
+              <p class="menu-cart__item-desc">Tomaten, Käse, Salami, Artichocken</p>
+            </div>
+            <div class="menu-cart__item">
+              <div class="menu-cart__item-title">
+                <h4>30 Hellas</h4>
+                <span class="menu-cart__item-price">7,50€</span>
+              </div>
+              <p class="menu-cart__item-desc">Tomaten, Käse, Schinken, Salami, Thunfisch, Artichocken</p>
+            </div>
+            <div class="menu-cart__item">
+              <div class="menu-cart__item-title">
+                <h4>31 Spezial</h4>
+                <span class="menu-cart__item-price">7,50€</span>
+              </div>
+              <p class="menu-cart__item-desc">Tomaten, Käse, frische Tomatenscheiben, Schafskäse, Peperoni, Oliven</p>
+            </div>
+            <div class="menu-cart__item">
+              <div class="menu-cart__item-title">
+                <h4>32 Roma</h4>
+                <span class="menu-cart__item-price">7,50€</span>
+              </div>
+              <p class="menu-cart__item-desc">Tomaten, Käse, Schinken, Salami, Champignongs, Thunfisch</p>
+            </div>
+            <div class="menu-cart__item">
+              <div class="menu-cart__item-title">
+                <h4>33 Italiana</h4>
+                <span class="menu-cart__item-price">7,50€</span>
+              </div>
+              <p class="menu-cart__item-desc">Tomaten, Käse, Spinat, Schafskäse, Knoblauch</p>
+            </div>
+            <div class="menu-cart__item">
+              <div class="menu-cart__item-title">
+                <h4>34 Bazi</h4>
+                <span class="menu-cart__item-price">7,50€</span>
+              </div>
+              <p class="menu-cart__item-desc">Tomaten, Käse, Spinat, Schinken, Knoblauch, Schafskäse</p>
+            </div>
+            <div class="menu-cart__item">
+              <div class="menu-cart__item-title">
+                <h4>35 Wunsch-Pizza</h4>
+                <span class="menu-cart__item-price">9,50€</span>
+              </div>
+              <p class="menu-cart__item-desc">Zusammenstellung nach ihren Wünschen</p>
+            </div>
+            <div class="menu-cart__item">
+              <div class="menu-cart__item-title">
+                <h4>36 Calzone (gefüllt)</h4>
+                <span class="menu-cart__item-price">9,00€</span>
+              </div>
+              <p class="menu-cart__item-desc">Pilze, Zwiebeln, Gyros</p>
+            </div>
+            <div class="menu-cart__item">
+              <div class="menu-cart__item-title">
+                <h4>37 Calamari</h4>
+                <span class="menu-cart__item-price">7,50€</span>
+              </div>
+              <p class="menu-cart__item-desc">Tomaten, Käse, Knoblauch</p>
+            </div>
+            <div class="menu-cart__item">
+              <div class="menu-cart__item-title">
+                <h4>38 Frutti di Mare</h4>
+                <span class="menu-cart__item-price">7,50€</span>
+              </div>
+              <p class="menu-cart__item-desc">Tomaten, Käse, Meeresfrüchte</p>
+            </div>
+          </div>
+        </div>
+
+        <div id="cat-11" class="menu-cart__category">
+          <h2 class="menu-cart__title">Getränke</h2>
+          <div class="menu-cart__container">
+            <div class="menu-cart__item">
+              <div class="menu-cart__item-title">
+                <h4>Coca Cola 0,2l</h4>
+                <span class="menu-cart__item-price">1,90€</span>
+              </div>
+            </div>
+            <div class="menu-cart__item">
+              <div class="menu-cart__item-title">
+                <h4>Coca Cola 0,4l</h4>
+                <span class="menu-cart__item-price">3,00€</span>
+              </div>
+            </div>
+            <div class="menu-cart__item">
+              <div class="menu-cart__item-title">
+                <h4>Fanta 0,2l</h4>
+                <span class="menu-cart__item-price">1,90€</span>
+              </div>
+            </div>
+            <div class="menu-cart__item">
+              <div class="menu-cart__item-title">
+                <h4>Fanta 0,4l</h4>
+                <span class="menu-cart__item-price">3,00€</span>
+              </div>
+            </div>
+            <div class="menu-cart__item">
+              <div class="menu-cart__item-title">
+                <h4>Mineralwasser 0,2l</h4>
+                <span class="menu-cart__item-price">1,90€</span>
+              </div>
+            </div>
+            <div class="menu-cart__item">
+              <div class="menu-cart__item-title">
+                <h4>Mineralwasser 0,4l</h4>
+                <span class="menu-cart__item-price">3,00€</span>
+              </div>
+            </div>
+            <div class="menu-cart__item">
+              <div class="menu-cart__item-title">
+                <h4>Saft</h4>
+                <span class="menu-cart__item-price">2,40€</span>
+              </div>
+            </div>
+            <div class="menu-cart__item">
+              <div class="menu-cart__item-title">
+                <h4>Bier, Flasche 0,3l</h4>
+                <span class="menu-cart__item-price">1,70€</span>
+              </div>
+            </div>
+            <div class="menu-cart__item">
+              <div class="menu-cart__item-title">
+                <h4>Bier, Flasche 0,5l</h4>
+                <span class="menu-cart__item-price">2,20€</span>
+              </div>
+            </div>
+            <div class="menu-cart__item">
+              <div class="menu-cart__item-title">
+                <h4>Kaffee</h4>
+                <span class="menu-cart__item-price">1,90€</span>
+              </div>
+            </div>
+            <div class="menu-cart__item">
+              <div class="menu-cart__item-title">
+                <h4>Metaxa 2cl.</h4>
+                <span class="menu-cart__item-price">2,40€</span>
+              </div>
+            </div>
+            <div class="menu-cart__item">
+              <div class="menu-cart__item-title">
+                <h4>Ouzo 2cl.</h4>
+                <span class="menu-cart__item-price">2,00€</span>
+              </div>
+            </div>
+            <div class="menu-cart__item">
+              <div class="menu-cart__item-title">
+                <h4>Rotwein Glas</h4>
+                <span class="menu-cart__item-price">2,80€</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="map" class="here-maps-section">
+      <div id="mapContainer" style="width: 100%; height: 100%"></div>
+    </section>
+
+    <footer>
+      <div class="container padding-around">
+        Kleiner Werth 40, Wuppertal. Imbiss Becker. Currywurst, Pizza, Koteletts, Schnitzel, Gyros, Spieß,
+        Nudelgerichte. 60 Jahre Imbiss. Restaurant, Corona, In house dining, In-house.
+      </div>
+    </footer>
+    <script type="text/javascript" src="https://js.api.here.com/v3/3.1/mapsjs-core.js"></script>
+    <script type="text/javascript" src="https://js.api.here.com/v3/3.1/mapsjs-service.js"></script>
+    <script type="text/javascript" src="https://js.api.here.com/v3/3.1/mapsjs-ui.js"></script>
+    <script type="text/javascript" src="https://js.api.here.com/v3/3.1/mapsjs-mapevents.js"></script>
     <script type="text/javascript" src="dist/main.js"></script>
   </body>
 </html>
